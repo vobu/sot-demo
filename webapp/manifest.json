@@ -20,6 +20,10 @@
         "settings": {
           "odataVersion": "4.0"
         }
+      },
+      "PeopleDetailDatasource": {
+        "uri": "",
+        "type": "JSON"
       }
     }
   },
@@ -76,6 +80,10 @@
           "groupId": "$direct",
           "synchronizationMode": "None"
         }
+      },
+      "PeopleDetail": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "PeopleDetailDatasource"
       }
     },
     "resources": {

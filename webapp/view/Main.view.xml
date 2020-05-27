@@ -17,6 +17,28 @@
 										description="{Backend>UserName}" />
 								</items>
 							</List>
+							<VBox class="sapUiSmallMargin">
+								<Label text="Name" 
+									labelFor="idName" />
+								<Input enabled="false" 
+									id="idName" 
+									value="{PeopleDetail>/FirstName} {PeopleDetail>/MiddleName} {PeopleDetail>/LastName}" />
+								<Label text="Username" 
+									labelFor="idUserName" />
+								<Input enabled="false" 
+									id="idUserName" 
+									value="{PeopleDetail>/UserName}" />
+								<Label text="Gender" 
+									labelFor="idGender" />
+								<Input enabled="false" 
+									id="idGender" 
+									value="{PeopleDetail>/Gender}" />
+								<Label text="Age" 
+									labelFor="idAge" />
+								<Input enabled="false" 
+									id="idAge" 
+									value="{= ${PeopleDetail>/Age} ? ${PeopleDetail>/Age} : '?'}" />
+							</VBox>
 						</HBox>
 					</content>
 				</Page>
