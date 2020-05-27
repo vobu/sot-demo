@@ -1,3 +1,7 @@
 node_modules
 .DS_Store
 .che
+*.log
+
+# don't want this in this proj
+yarn.lock
