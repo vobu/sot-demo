@@ -5,3 +5,4 @@ node_modules
 
 # don't want this in this proj
 yarn.lock
+*/dist
