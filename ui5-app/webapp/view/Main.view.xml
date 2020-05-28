@@ -1,12 +1,13 @@
 <mvc:View controllerName="demo.sot.sot.controller.Main" 
 	xmlns:mvc="sap.ui.core.mvc" 
 	displayBlock="true" 
-	xmlns="sap.m">
+	xmlns="sap.m" 
+	xmlns:webcomponent="sotlib">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
 				<Page id="page" 
-					title="test streaming title">
+					title="{i18n>title}">
 					<content>
 						<HBox>
 							<List items="{Backend>/People}" 
@@ -39,6 +40,12 @@
 									id="idAge" 
 									value="{= ${PeopleDetail>/Age} ? ${PeopleDetail>/Age} : '?'}" />
 							</VBox>
+							<webcomponent:List items="{Backend>/People}" 
+								mode="SingleSelect">
+								<webcomponent:StandardListItem title="{Backend>FirstName} {Backend>LastName}" 
+									description="{Backend>UserName}" 
+									press="onPeopleSelectInWebcomponent" />
+							</webcomponent:List>
 						</HBox>
 					</content>
 				</Page>
