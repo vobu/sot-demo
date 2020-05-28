@@ -2,6 +2,9 @@
   "name": "ui5-app",
   "version": "0.0.1",
   "description": "",
+  "dependencies": {
+    "sotlib": "0.0.1"
+  },
   "devDependencies": {
     "@sap/ui5-builder-webide-extension": "1.0.x",
     "@sapui5/ts-types": "^1.78.0",
@@ -18,7 +21,8 @@
       "@sap/ui5-builder-webide-extension",
       "ui5-middleware-index",
       "ui5-middleware-livereload",
-      "ui5-middleware-simpleproxy"
+      "ui5-middleware-simpleproxy",
+      "sotlib"
     ]
   }
 }
