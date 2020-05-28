@@ -1,0 +1,9 @@
+specVersion: '2.1'
+metadata:
+  name: sotlib
+type: library
+framework:
+  name: OpenUI5
+  version: "1.78.0"
+  libraries:
+    - name: sap.ui.core
