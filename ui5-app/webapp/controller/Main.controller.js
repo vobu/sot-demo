@@ -10,6 +10,9 @@ sap.ui.define(
         return Controller.extend("demo.sot.sot.controller.Main", {
             onInit() {},
 
+            /**
+             * @param {typeof sap.ui.base.Event} oEvent 
+             */
             onPeopleSelect(oEvent) {
                 const oListItemSelected = oEvent.getParameters().listItem
                 const sPersonDetail = oListItemSelected.getBindingContext("Backend").getPath()

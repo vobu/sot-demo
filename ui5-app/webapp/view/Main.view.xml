@@ -6,7 +6,7 @@
 		<App id="app">
 			<pages>
 				<Page id="page" 
-					title="{i18n>title}">
+					title="test streaming title">
 					<content>
 						<HBox>
 							<List items="{Backend>/People}" 

@@ -1,0 +1,24 @@
+{
+  "name": "ui5-app",
+  "version": "0.0.1",
+  "description": "",
+  "devDependencies": {
+    "@sap/ui5-builder-webide-extension": "1.0.x",
+    "@sapui5/ts-types": "^1.78.0",
+    "@ui5/cli": "^2.2.4",
+    "ui5-middleware-index": "^0.2.0",
+    "ui5-middleware-livereload": "^0.3.0",
+    "ui5-middleware-simpleproxy": "^0.3.0"
+  },
+  "scripts": {
+    "build": "ui5 build --clean-dest --include-task=generateManifestBundle generateCachebusterInfo"
+  },
+  "ui5": {
+    "dependencies": [
+      "@sap/ui5-builder-webide-extension",
+      "ui5-middleware-index",
+      "ui5-middleware-livereload",
+      "ui5-middleware-simpleproxy"
+    ]
+  }
+}
